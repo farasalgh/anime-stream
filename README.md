@@ -18,8 +18,8 @@ AnimeStream adalah aplikasi streaming anime berbasis web yang dikembangkan denga
 
 1. **Clone Repository**
    ```sh
-   git clone https://github.com/username/animestream.git
-   cd animestream
+   git clone https://github.com/farasalgh/anime-stream.git
+   cd anime-stream
    ```
 
 2. **Install Dependencies**
