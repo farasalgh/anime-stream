@@ -1,36 +1,146 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AnimeStream
 
-## Getting Started
+AnimeStream adalah aplikasi streaming anime berbasis web yang dikembangkan dengan **Next.js** dan **Tailwind CSS**. Aplikasi ini memungkinkan pengguna untuk melihat daftar anime, detail anime, serta menonton anime secara langsung.
 
-First, run the development server:
+## 🚀 Fitur Utama
+- **Daftar Anime Ongoing & Completed**
+- **Top Rated Anime**
+- **Detail Anime** (Episode, Skor, Status, Studio, dll.)
+- **Streaming Anime Langsung**
+- **Desain Responsif dengan Tailwind CSS**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🛠️ Teknologi yang Digunakan
+- **Frontend:** Next.js (React Framework)
+- **Styling:** Tailwind CSS
+- **API Source:** [Wajik Anime API](https://github.com/wajik45/wajik-anime-api)
+
+## 📦 Instalasi dan Menjalankan Project
+
+1. **Clone Repository**
+   ```sh
+   git clone https://github.com/username/animestream.git
+   cd animestream
+   ```
+
+2. **Install Dependencies**
+   ```sh
+   npm install
+   ```
+
+3. **Menjalankan Server Next.js**
+   ```sh
+   npm run dev
+   ```
+   Aplikasi akan berjalan di `http://localhost:3000`
+
+## 🔗 API yang Digunakan
+Proyek ini menggunakan [Wajik Anime API](https://github.com/wajik45/wajik-anime-api) sebagai sumber data anime. Pastikan API tersebut sudah berjalan sebelum menjalankan proyek.
+
+### Contoh Endpoint yang Digunakan:
+- **Daftar Anime Ongoing:** `GET http://localhost:3001/otakudesu/ongoing`
+- **Daftar Anime Completed:** `GET http://localhost:3001/otakudesu/completed`
+- **Detail Anime:** `GET http://localhost:3001/otakudesu/anime/{animeId}`
+
+## 🎨 Struktur Proyek
+```
+/animestream
+│── /public        # Assets publik (logo, gambar, dll.)
+│── /components    # Komponen UI
+│── /pages         # Halaman utama (Home, Detail, dll.)
+│── /styles        # File CSS/Tailwind tambahan
+│── package.json   # Konfigurasi dependensi
+│── next.config.js # Konfigurasi Next.js
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🤝 Kontribusi
+Kami menerima kontribusi dari siapa saja! Jika ingin berkontribusi, ikuti langkah berikut:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Fork repository ini**
+2. **Buat branch baru** untuk fitur atau perbaikan bug (`git checkout -b feature-nama-fitur`)
+3. **Lakukan perubahan dan commit** (`git commit -m "Menambahkan fitur XYZ"`)
+4. **Push ke repository Anda** (`git push origin feature-nama-fitur`)
+5. **Buat Pull Request (PR)** di repository utama
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Kami akan meninjau PR Anda secepat mungkin. Terima kasih atas kontribusinya! 🚀
 
-## Learn More
+## 📄 Lisensi
+Proyek ini menggunakan lisensi **MIT**. Silakan gunakan dan modifikasi sesuai kebutuhan.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+💡 **Catatan:** Jangan lupa untuk menjalankan backend API [Wajik Anime API](https://github.com/wajik45/wajik-anime-api) sebelum menjalankan proyek ini! 🚀
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+# AnimeStream (English)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+AnimeStream is a web-based anime streaming application developed with **Next.js** and **Tailwind CSS**. This application allows users to browse anime lists, view anime details, and stream anime directly.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Main Features
+- **Ongoing & Completed Anime List**
+- **Top Rated Anime**
+- **Anime Details** (Episodes, Score, Status, Studio, etc.)
+- **Direct Anime Streaming**
+- **Responsive Design with Tailwind CSS**
+
+## 🛠️ Technologies Used
+- **Frontend:** Next.js (React Framework)
+- **Styling:** Tailwind CSS
+- **API Source:** [Wajik Anime API](https://github.com/wajik45/wajik-anime-api)
+
+## 📦 Installation and Running the Project
+
+1. **Clone the Repository**
+   ```sh
+   git clone https://github.com/username/animestream.git
+   cd animestream
+   ```
+
+2. **Install Dependencies**
+   ```sh
+   npm install
+   ```
+
+3. **Run Next.js Server**
+   ```sh
+   npm run dev
+   ```
+   The application will run on `http://localhost:3000`
+
+## 🔗 API Used
+This project uses [Wajik Anime API](https://github.com/wajik45/wajik-anime-api) as its anime data source. Ensure the API is running before starting the project.
+
+### Example API Endpoints:
+- **Ongoing Anime List:** `GET http://localhost:3001/otakudesu/ongoing`
+- **Completed Anime List:** `GET http://localhost:3001/otakudesu/completed`
+- **Anime Details:** `GET http://localhost:3001/otakudesu/anime/{animeId}`
+
+## 🎨 Project Structure
+```
+/animestream
+│── /public        # Public assets (logo, images, etc.)
+│── /components    # UI Components
+│── /pages         # Main pages (Home, Detail, etc.)
+│── /styles        # Additional CSS/Tailwind files
+│── package.json   # Dependency configuration
+│── next.config.js # Next.js configuration
+```
+
+## 🤝 Contribution
+We welcome contributions from anyone! If you want to contribute, follow these steps:
+
+1. **Fork this repository**
+2. **Create a new branch** for your feature or bug fix (`git checkout -b feature-name`)
+3. **Make changes and commit** (`git commit -m "Added XYZ feature"`)
+4. **Push to your repository** (`git push origin feature-name`)
+5. **Create a Pull Request (PR)** to the main repository
+
+We will review your PR as soon as possible. Thank you for contributing! 🚀
+
+## 📄 License
+This project is licensed under the **MIT License**. Feel free to use and modify it as needed.
+
+---
+
+💡 **Note:** Make sure to run the [Wajik Anime API](https://github.com/wajik45/wajik-anime-api) backend before running this project! 🚀
+
